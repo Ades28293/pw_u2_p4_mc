@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-color: #093f8e;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  color: white;
+}
+
+#miFormulario {
+  display: grid;
+  background-color: #34cbe0;
+  border-radius: 15px;
+  box-shadow: 50px 50px 40px -10px black;
+
+  padding: 20px 30px;
+
+  box-shadow: 50px 50px 40px -10px black;
+  align-content: center;
+  justify-content: center;
+}
+
+#miFormulario label {
+  text-align: center;
+  margin: 5px;
+  border-bottom: 15px black;
+  color: black;
+}
+
+#miFormulario input {
+  border-radius: 25px;
+  width: 350px;
+  margin: 5px;
+  border-bottom: 2px solid rgb(20, 124, 172);
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}

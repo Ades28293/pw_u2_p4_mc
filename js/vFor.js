@@ -46,7 +46,7 @@ const app = Vue.createApp({
                 console.log('No es enter')
             }
         },
-        agregarEstudiante2(event){
+        agregarEstudiante2(){
             console.log('Vamos agregar')
              const nuevoEstudiante={
                  nombre:this.nombre,

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estudiante</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <link rel="stylesheet" href="../css/styleEstudiante.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="estudiante">
+            <header>
+                <h1 id="titulo">Formulario Estudiante</h1>
+                <hr>
+            </header>
+            <nav></nav>
+            <section>
+                <div id="miFormulario">
+                   
+                        <h2>Nuevo estudiante</h2>
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" placeholder="Ingrese su nombre" v-model="nombre">
+                        <label for="apellido">Apellido:</label>
+                       <input id="apellido" type="text" placeholder="Ingrese su apellido" v-model="apellido">
+                        <label for="edad">Edad:</label>
+                       <input id="edad" type="text" placeholder="Ingrese su edad" v-model="edad">
+                        <label for="ciudad">Ciudad:</label>
+                        <input id="ciudad" type="text" placeholder="Ingrese su ciudad" v-model="ciudad">
+
+                        <button id="guardar" v-on:click="agregarEstudiante">Guardar</button>
+
+                        <h3>Lista Estudiantes</h3>
+                        <ul>
+                            <li v-for="({nombre,apellido,edad,ciudad},index) in miArreglo">
+                                <span> {{index+1}}-{{nombre}}-{{apellido}}-{{edad}}-{{ciudad}}</span>
+                                
+                              </li>
+                        </ul>
+                </div>
+
+
+
+
+            </section>
+            <footer></footer>
+            <script src="../js/formularioEstudiante.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
